@@ -1,0 +1,13 @@
+.button {
+	width: 100%;
+	padding: 1rem 0;
+	background-color: var(--color-theme-main);
+	color: var(--color-white);
+	text-transform: uppercase;
+	font-weight: 700;
+	border: none;
+}
+
+.isBlack {
+	background-color: var(--color-text-default);
+}
