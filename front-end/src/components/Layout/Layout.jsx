@@ -9,21 +9,21 @@ import { MainMenu } from "../MainMenu/MainMenu";
 import { TopBar } from "../TopBar/TopBar";
 
 export function Layout() {
-	return (
-		<>
-			<MainContent>
-				<TopBar>
-					<MainMenu />
-					<Logo />
-					<div>
-						<CurrencySelector />
-						<IconMenu />
-					</div>
-				</TopBar>
-				<CategoryMenu />
-				<Outlet />
-			</MainContent>
-			<Footer />
-		</>
-	);
+    return (
+        <>
+            <MainContent>
+                <TopBar>
+                    <MainMenu />
+                    <Logo />
+                    <div>
+                        <CurrencySelector />
+                        <IconMenu />
+                    </div>
+                </TopBar>
+                <CategoryMenu />
+                <Outlet />
+            </MainContent>
+            <Footer />
+        </>
+    );
 }

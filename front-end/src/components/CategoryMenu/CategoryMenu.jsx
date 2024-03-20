@@ -3,19 +3,21 @@ import { CATEGORIES } from "../../constants/categories";
 import { NavLink, useParams } from "react-router-dom";
 
 export function CategoryMenu() {
-	const params = useParams();
+    const params = useParams();
 
-	return (
-		<div className={styles.categoryMenu}>
-			<ul>
-				{CATEGORIES.map(({ path, categoryName }) => {
-					return (
-						<li key={categoryName}>
-							<NavLink to={`/${params.gender}/${path}`}>{categoryName}</NavLink>
-						</li>
-					);
-				})}
-			</ul>
-		</div>
-	);
+    return (
+        <div className={styles.categoryMenu}>
+            <ul>
+                {CATEGORIES.map((category) => {
+                    return (
+                        <li key={category.path}>
+                            <NavLink to={`/${params.gender}/${category.path}`}>
+                                {category.categoryName}
+                            </NavLink>
+                        </li>
+                    );
+                })}
+            </ul>
+        </div>
+    );
 }
