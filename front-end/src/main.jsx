@@ -12,7 +12,7 @@ import { ProductDetails } from "./views/ProductDetails/ProductDetails";
 import { mainPageLoader } from "./api/mainPageLoader";
 import { productListLoader } from "./api/productListLoader";
 import { productLoader } from "./api/productLoader";
-import { addproductToFavouritesAction } from "./addProductToFavouritesAction";
+import { addproductToFavouritesAction } from "./api/addProductToFavouritesAction";
 import { favouritesLoader } from "./api/favouritesLoader";
 import { deleteFavouriteActions } from "./api/deleteFavouriteActions";
 

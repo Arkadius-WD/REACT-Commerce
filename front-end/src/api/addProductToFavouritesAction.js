@@ -1,4 +1,4 @@
-import { BACK_END_URL } from "./constants/api";
+import { BACK_END_URL } from "../constants/api";
 
 export function addproductToFavouritesAction({ params: { productId } }) {
 	return fetch(`${BACK_END_URL}/favourites`, {
